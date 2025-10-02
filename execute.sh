@@ -3,7 +3,7 @@
 #!/bin/bash
 
 # Variables de entorno requeridas (ajusta según tu entorno local)
-MYSQL_HOST=host.docker.internal
+MYSQL_HOST=MYSQL_HOST=127.0.0.1
 MYSQL_PORT=3306
 MYSQL_USER=mi_usuario
 MYSQL_PASSWORD=mi_password
