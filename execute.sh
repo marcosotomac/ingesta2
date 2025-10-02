@@ -1,12 +1,14 @@
-
-
 #!/bin/bash
 
 # Variables de entorno requeridas (ajusta según tu entorno local)
-MYSQL_HOST=MYSQL_HOST=127.0.0.1
-MYSQL_PORT=3306
-MYSQL_USER=mi_usuario
-MYSQL_PASSWORD=mi_password
+# Contenedor MySQL: --name ingesta-db (root password: secret) | Puerto publicado en host: 4567
+# IMPORTANTE: el nombre del contenedor (ingesta-db) NO es el nombre de la base de datos.
+MYSQL_HOST=127.0.0.1
+MYSQL_PORT=4567
+# Ojo: "ingesta-db" es el NOMBRE DEL CONTENEDOR, no el nombre de la base.
+# La base que creaste dentro de MySQL es "mi_base"; el usuario que usaremos ahora es root.
+MYSQL_USER=root
+MYSQL_PASSWORD=secret
 MYSQL_DATABASE=mi_base
 MYSQL_TABLE=mi_tabla
 OUTPUT_CSV=/app/data.csv
